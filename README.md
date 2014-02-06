@@ -7,7 +7,10 @@ Give address components (address, city, state) and get more info (zip code along
 ### How?
 Geocoder.geocode + Geocoder.reverseGeocode
 
+### Example
 ````objc
+#import "CLGeocoder+DoubleLookup.h"
+
 CLGeocoder *geocoder = [[CLGeocoder alloc] init];
 [geocoder doubleGeocodeAddressDictionary:@{ @"City" : @"Milwaukee", @"State" : @"WI" } completionHandler:^(NSArray *placemarks, NSError *error) {
 	NSLog(@"Placemarks - %@", [placemarks objectAtIndex:0]);
