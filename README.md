@@ -11,8 +11,8 @@ Geocoder.geocode + Geocoder.reverseGeocode
 ````objc
 #import "CLGeocoder+DoubleLookup.h"
 
-# INPUT: Milwaukee, WI
-# OUTPUT: 700–748 N Milwaukee St, 700–748 N Milwaukee St, Milwaukee, WI  53202, United States @ <+43.03889350,-87.90655650> +/- 100.00m
+// INPUT: Milwaukee, WI
+// OUTPUT: 700–748 N Milwaukee St, 700–748 N Milwaukee St, Milwaukee, WI  53202, United States @ <+43.03889350,-87.90655650> +/- 100.00m
 
 // Optional - Add "Address" to the dictionary
 CLGeocoder *geocoder = [[CLGeocoder alloc] init];
